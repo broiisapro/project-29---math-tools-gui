@@ -26,18 +26,15 @@ def calculate_area():
         except ValueError:
             messagebox.showerror("Invalid input", "Please enter valid numbers")
 
-    # Create a new window for area calculation
     area_window = tk.Toplevel()
     area_window.title("Area Calculation")
 
-    # Dropdown for shape selection
     shape_var = tk.StringVar()
     shape_var.set("Square")
     shape_options = ["Square", "Rectangle", "Circle", "Triangle"]
     shape_menu = tk.OptionMenu(area_window, shape_var, *shape_options)
     shape_menu.pack()
 
-    # Input fields for each shape
     side_label = tk.Label(area_window, text="Enter side length (Square):")
     side_label.pack()
     side_entry = tk.Entry(area_window)
@@ -102,18 +99,15 @@ def calculate_volume():
         except ValueError:
             messagebox.showerror("Invalid input", "Please enter valid numbers")
 
-    # Create a new window for volume calculation
     volume_window = tk.Toplevel()
     volume_window.title("Volume Calculation")
 
-    # Dropdown for shape selection
     shape_var = tk.StringVar()
     shape_var.set("Cube")
     shape_options = ["Cube", "Rectangular Prism", "Sphere", "Cylinder", "Cone"]
     shape_menu = tk.OptionMenu(volume_window, shape_var, *shape_options)
     shape_menu.pack()
 
-    # Input fields for each shape
     side_label = tk.Label(volume_window, text="Enter side length (Cube):")
     side_label.pack()
     side_entry = tk.Entry(volume_window)
@@ -169,18 +163,15 @@ def calculate_surface_area():
         except ValueError:
             messagebox.showerror("Invalid input", "Please enter valid numbers")
 
-    # Create a new window for surface area calculation
     surface_area_window = tk.Toplevel()
     surface_area_window.title("Surface Area Calculation")
 
-    # Dropdown for shape selection
     shape_var = tk.StringVar()
     shape_var.set("Cube")
     shape_options = ["Cube", "Rectangular Prism", "Sphere", "Cylinder"]
     shape_menu = tk.OptionMenu(surface_area_window, shape_var, *shape_options)
     shape_menu.pack()
 
-    # Input fields for each shape
     side_label = tk.Label(surface_area_window, text="Enter side length (Cube):")
     side_label.pack()
     side_entry = tk.Entry(surface_area_window)
@@ -229,18 +220,15 @@ def calculate_angles():
         except ValueError:
             messagebox.showerror("Invalid input", "Please enter a valid angle")
 
-    # Create a new window for angle calculation
     angle_window = tk.Toplevel()
     angle_window.title("Angle Calculation")
 
-    # Dropdown for trigonometric function selection
     choice_var = tk.StringVar()
     choice_var.set("Sine")
     choices = ["Sine", "Cosine", "Tangent"]
     choice_menu = tk.OptionMenu(angle_window, choice_var, *choices)
     choice_menu.pack()
 
-    # Input field for angle
     angle_label = tk.Label(angle_window, text="Enter angle in degrees:")
     angle_label.pack()
     angle_entry = tk.Entry(angle_window)
@@ -264,11 +252,9 @@ def calculate_hypotenuse():
         except ValueError:
             messagebox.showerror("Invalid input", "Please enter valid numbers")
 
-    # Create a new window for hypotenuse calculation
     hypotenuse_window = tk.Toplevel()
     hypotenuse_window.title("Hypotenuse Calculator")
 
-    # Input fields for sides of the triangle
     side_a_label = tk.Label(hypotenuse_window, text="Enter side A:")
     side_a_label.pack()
     side_a_entry = tk.Entry(hypotenuse_window)
@@ -303,11 +289,9 @@ def prime_check():
         except ValueError:
             messagebox.showerror("Invalid input", "Please enter a valid number")
 
-    # Create a new window for prime number check
     prime_window = tk.Toplevel()
     prime_window.title("Prime Number Check")
 
-    # Input field for number
     num_label = tk.Label(prime_window, text="Enter a number:")
     num_label.pack()
     num_entry = tk.Entry(prime_window)
@@ -340,11 +324,9 @@ def quadratic_solver():
         except ValueError:
             messagebox.showerror("Invalid input", "Please enter valid numbers")
 
-    # Create a new window for quadratic solver
     quadratic_window = tk.Toplevel()
     quadratic_window.title("Quadratic Solver")
 
-    # Input fields for coefficients
     a_label = tk.Label(quadratic_window, text="Enter coefficient a:")
     a_label.pack()
     a_entry = tk.Entry(quadratic_window)
